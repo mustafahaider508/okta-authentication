@@ -19,7 +19,7 @@ const dataSchema = yup.object().shape({
   password: yup.string().required("Password is required*"),
   username: yup.string().required("User Name is required*"),
 });
-export default function Signin() {
+export default function Signin({ signIn }: any) {
   const [showPassword, setShowPassword] = useState(false);
   const formRef: any = useRef();
 
@@ -43,7 +43,9 @@ export default function Signin() {
       validationSchema={dataSchema}
       validateOnBlur={false}
       validateOnChange={false}
-      onSubmit={(values, formData) => {}}
+      onSubmit={(values, formData) => {
+        signIn();
+      }}
     >
       {({
         values,
