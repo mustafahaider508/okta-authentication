@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
     "@okta/okta-auth-js": "^7.4.2",
     "@okta/okta-signin-widget": "^7.11.0",
     "bootstrap": "^5.3.2",
     "formik": "^2.4.5",
+    "heroicons": "^2.0.18",
     "next": "13.5.4",
     "next-auth": "^4.23.2",
     "react": "^18",
