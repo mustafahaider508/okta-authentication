@@ -13,4 +13,6 @@ export const authOptions = {
   secret: process.env.SECERT as string,
 };
 
+//commenting for github push
+
 export default NextAuth(authOptions);
